@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+     
+     background-size: cover;
+     height: 200px;}
+     #img{
+        z-index: -1;
+        position: fixed;
+     }
+     #backimg{
+        position: absolute;
+        top: -50px;
+     }
+     
+  #main-div{
+    margin-top: 100px;
+  }   
+header {
+    background-color: #c3a982;
+    padding: 10px;
+    color: white;
+    position: relative;
+    top: -100px;
+
+}
+#text{text-align: center;
+    background-color: #af976d;
+    height: 30px;
+
+}
+#text a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+    left: 700px;  
+    z-index: 1; 
+}
+.nav1{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 7px;
+}
+.nav1 p{
+    color: black;
+    width: 15px;
+    position: relative;
+    top: -15px;
+    left: 3px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+}
+.navp{
+    margin-left: 25px;
+    position: relative;
+    top: -40px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+ul.steps {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+ul.steps li {
+    background-color: #af976d;
+    padding: 10px;
+    color: white;
+    width: 200px;
+    display: inline-block;
+    height: 30px;
+    margin-left: 10px;
+    border: 0.5px solid white;
+}
+
+.language {
+    padding: 10px;
+    background-color: #846c5b;
+    position: absolute;
+    right: 50px;
+    background-color: #f8f8f8;
+    color: black;
+    font-size: 13px;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.booking-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    z-index: 1;
+    position: absolute;
+    top: 200px;
+}
+#div1{
+    border: 3px solid white;
+    display: flex;
+    width: 300px;
+    box-shadow: 10px 10px 20px;
+    background-color: #f8f8f8;
+
+}
+#page{
+    position: absolute;
+    top: 230px;
+    left: 400px;
+    background-color: white;
+    font-size: 13px;
+    width: 1000px;
+    line-height: 50px;
+    padding: 10px;
+    margin-left: 50px;
+}
+#page p,h1{
+    margin-left: 30px;
+}
+
+.form-section {
+    width: 40%;
+    margin-left: 30px;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 480px;
+}
+
+form label {
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    top: 12px;
+}
+
+form input, form select, button,#nights,#adults,#children {
+    padding: 10px;
+    font-size: 15px;
+    border: 0.5px solid #000000;
+    width: 220px;
+}
+
+button {
+    background-color: #c3a982;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.image-section {
+    width: 50%;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+#arrival{
+    
+    border: 0.5px solid black;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa della Torre Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="text">
+        <a href="">BACK TO SITE</a>
+    </div>
+    <div id="backimg"></div>
+        <img id="img" src="https://chokhidhani.com/ethnic-resort-jaipur/wp-content/uploads/2022/07/1703830408_1502_Cottagebedroom.jpg" alt="">
+    </div>
+    <div id="main-div">
+    <header>
+         <nav>
+            <ul class="steps">
+                <li><div class="nav1"><p>1</p></div> <p class="navp">Choose Your Dates</p></li>
+                <li><div class="nav1"><p>2</p></div> <p class="navp">Select Room & Rate</p></li>
+                <li><div class="nav1"><p>3</p></div> <p class="navp">Guest Information</p></li>
+                <li><div class="nav1"><p>4</p></div> <p class="navp">Confirm Booking</p></li>`    
+            </ul>
+            <div class="language">
+                <span>ENGLISH</span>
+            </div>
+        </nav> 
+    </header>
+   
+    
+
+    <main>
+        <div id="page">
+            <h1>Villa della Torre</h1>
+            <p>Welcome to Villa Della Torre on-line booking system. Please select your date and number of guests in order to find the best accommodations. Thank you!</p>
+        </div>
+        <div class="booking-container">
+            
+            <div class="form-section">
+                 <div id="div1">
+                <form>
+                    <label for="arrival">Arrival Date</label>
+                    <input type="date" id="arrival" name="arrival-date" value="2024-09-06">
+
+                    <label for="nights">Nights</label>
+                    <input type="number" id="nights" name="nights" value="1" min="1">
+                    <label for="adults">Adults</label>
+                    <select id="adults" name="adults">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                    </select>
+
+                    <label for="children">Children</label>
+                    <select id="children" name="children">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+
+                    <label for="currency">Currency</label>
+                    <select id="currency" name="currency">
+                        <option value="euro" selected>Euro</option>
+                        <option value="usd">USD</option>
+                    </select>
+                    <button type="submit">Search</button>
+                </div>
+                    
+                </form>
+
+            </div>
+            <div class="image-section">
+                <img src=>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+
+</html>
